@@ -3,3 +3,11 @@
 
 // Base
 @use 'base/reset';
+
+// Layout
+@use 'layout/grid';
+@use 'layout/header';
+@use 'layout/sidebar';
+@use 'layout/breadcrumb';
+@use 'layout/content';
+@use 'layout/footer';
