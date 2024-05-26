@@ -1,0 +1,36 @@
+.user {
+  display: grid;
+  gap: 40px;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+
+  &__user {
+    display: grid;
+    gap: 14px;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  &__details {
+    display: grid;
+    line-height: 1.2;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__name {
+    color: var(--color-primary);
+    font-weight: 400;
+  }
+
+  &__email {
+    color: var(--color-font-light);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+}

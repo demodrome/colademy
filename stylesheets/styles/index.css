@@ -249,7 +249,9 @@ ul, ol {
 }
 
 :root {
+  --color-primary: purple;
   --color-font-body: #333333;
+  --color-font-light: #7a7a7a;
   --color-ui-mid: #dfdfdf;
   --color-ui-dark: #333333;
 }
@@ -303,11 +305,45 @@ ul, ol {
 
 .icon {
   color: var(--color-font-body);
-  width: 25px;
-  height: 25px;
+  font-size: 1rem;
+}
+.icon--lg {
+  font-size: 1.3rem;
 }
 .icon--btn {
   cursor: pointer;
+}
+
+.user {
+  display: grid;
+  gap: 40px;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+}
+.user__user {
+  display: grid;
+  gap: 14px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.user__details {
+  display: grid;
+  line-height: 1.2;
+}
+.user__image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.user__name {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+.user__email {
+  color: var(--color-font-light);
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=index.css.map */
