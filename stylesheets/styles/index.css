@@ -252,8 +252,14 @@ ul, ol {
   --color-primary: purple;
   --color-font-body: #333333;
   --color-font-light: #7a7a7a;
+  --color-ui-header: #ffffff;
+  --color-ui-sidebar: #ffffff;
   --color-ui-mid: #dfdfdf;
   --color-ui-dark: #333333;
+}
+
+body {
+  background-color: var(--color-ui-mid);
 }
 
 .container {
@@ -263,6 +269,7 @@ ul, ol {
 }
 
 .header {
+  background-color: var(--color-ui-header);
   grid-column: 1/3;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -270,6 +277,7 @@ ul, ol {
 }
 
 .sidebar {
+  background-color: var(--color-ui-sidebar);
   grid-column: 1/2;
   grid-row: 2/5;
 }
