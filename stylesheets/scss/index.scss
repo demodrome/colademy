@@ -3,6 +3,7 @@
 
 // Base
 @use 'base/reset';
+@use 'base/color';
 
 // Layout
 @use 'layout/grid';
@@ -11,3 +12,7 @@
 @use 'layout/breadcrumb';
 @use 'layout/content';
 @use 'layout/footer';
+
+// Components
+@use 'components/search';
+@use 'components/icons';
