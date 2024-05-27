@@ -250,6 +250,7 @@ ul, ol {
 
 :root {
   --color-primary: purple;
+  --color-light: #ffffff;
   --color-font-body: #333333;
   --color-font-light: #7a7a7a;
   --color-font-link: #856d85;
@@ -282,6 +283,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
 .sidebar {
@@ -302,6 +304,9 @@ body {
 }
 
 .footer {
+  color: var(--color-font-body);
+  padding: 1.5rem 2rem;
+  text-align: center;
   grid-column: 2/3;
   grid-row: 4/5;
 }

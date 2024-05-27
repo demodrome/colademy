@@ -1,4 +1,7 @@
 .footer {
+  color: var(--color-font-body);
+  padding: 1.5rem 2rem;
+  text-align: center;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
