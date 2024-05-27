@@ -258,14 +258,20 @@ ul, ol {
   --color-ui-dark: #333333;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: var(--color-ui-mid);
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: minmax(0, max-content) 1fr;
+  grid-template-rows: repeat(2, auto) 1fr;
+  height: 100%;
 }
 
 .header {
@@ -352,6 +358,13 @@ body {
   color: var(--color-font-light);
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.navbar__nav-link {
+  color: #5c5c5c;
+}
+.navbar__nav-link:hover {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: minmax(0, max-content) 1fr;
+  grid-template-rows: repeat(2, auto) 1fr;
+  height: 100%;
 }

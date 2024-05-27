@@ -1,0 +1,9 @@
+.navbar {
+  &__nav-link {
+    color: #5c5c5c;
+
+    &:hover {
+      font-weight: 400;
+    }
+  }
+}
