@@ -252,6 +252,8 @@ ul, ol {
   --color-primary: purple;
   --color-font-body: #333333;
   --color-font-light: #7a7a7a;
+  --color-font-link: #856d85;
+  --color-font-link-dark: #553655;
   --color-ui-header: #ffffff;
   --color-ui-sidebar: #ffffff;
   --color-ui-mid: #dfdfdf;
@@ -269,7 +271,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: minmax(0, max-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content) 1fr;
   grid-template-rows: repeat(2, auto) 1fr;
   height: 100%;
 }
@@ -286,6 +288,7 @@ body {
   background-color: var(--color-ui-sidebar);
   grid-column: 1/2;
   grid-row: 2/5;
+  padding: 1rem 3rem 1rem 2rem;
 }
 
 .breadcrumb {
@@ -360,11 +363,31 @@ body {
   font-style: italic;
 }
 
+.navbar {
+  margin-bottom: 30px;
+}
+.navbar__nav {
+  display: grid;
+  gap: 10px;
+}
+.navbar__heading {
+  color: var(--color-font-light);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
 .navbar__nav-link {
-  color: #5c5c5c;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.navbar__nav-link {
+  color: var(--color-font-link);
 }
 .navbar__nav-link:hover {
-  font-weight: 400;
+  color: var(--color-font-link-dark);
 }
 
 /*# sourceMappingURL=index.css.map */
