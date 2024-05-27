@@ -257,17 +257,13 @@ ul, ol {
   --color-font-link-dark: #553655;
   --color-ui-header: #ffffff;
   --color-ui-sidebar: #ffffff;
-  --color-ui-mid: #dfdfdf;
+  --color-ui-mid: #ebebeb;
   --color-ui-dark: #333333;
 }
 
 html,
 body {
   height: 100%;
-}
-
-body {
-  background-color: var(--color-ui-mid);
 }
 
 .container {
@@ -299,6 +295,7 @@ body {
 }
 
 .content {
+  background-color: var(--color-ui-mid);
   grid-column: 2/3;
   grid-row: 3/4;
 }
