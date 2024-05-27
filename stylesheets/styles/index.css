@@ -413,7 +413,9 @@ body {
 }
 .breadcrumb__nav-item--root {
   color: var(--color-font-light);
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .breadcrumb__nav-link--active {
   color: var(--color-primary);
