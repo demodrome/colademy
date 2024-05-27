@@ -1,0 +1,40 @@
+.breadcrumb {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+
+  &__nav {
+    display: grid;
+    gap: 25px;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    align-items: center;
+  }
+
+  &__nav-item {
+    position: relative;
+
+    &:not(:first-child)::before {
+      color: var(--color-font-light);
+      content: '>';
+      display: block;
+      position: absolute;
+      left: -15px;
+      top: -1px;
+    }
+
+    &--root {
+      color: var(--color-font-light);
+      font-weight: 400;
+    }
+  }
+
+  &__nav-link {
+    
+    &--active {
+      color: var(--color-primary);
+      font-weight: 400;
+    }
+  }
+}
